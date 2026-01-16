@@ -1,0 +1,9 @@
+{
+    "app": {
+        "oci_profile": "DEFAULT",
+        "oci_region": "us-ashburn-1",
+        "oci_namespace": "my-namespace",
+        "oci_use_instance_principals": false
+    },
+    "work": "/Users/edwin/Work/ws-datafiles/"
+}

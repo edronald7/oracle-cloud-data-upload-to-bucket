@@ -1,0 +1,34 @@
+[
+    {
+        "nombre_tabla": "emkt_blacklist_emails",
+        "regex_file": "blacklist_emails_[0-9]{8}\\.csv\\.gz",
+        "sep": ",",
+        "encoding": "UTF-8",
+        "with_header": true,
+        "oci_bucket": "myorg-datalake-input-prod",
+        "prefix_path": "manual-loads/emkt_blacklist_emails",
+        "campos":[
+            {"name": "EMAIL", "type": "string"},
+            {"name": "CLASS", "type": "string"},
+            {"name": "LAST_UPDATE", "type": "string"}
+        ]
+    },
+    {
+        "nombre_tabla": "emkt_suscriptor_base",
+        "regex_file": "SuscriptorDB_[0-9]{8}\\.csv\\.gz",
+        "sep": "|",
+        "encoding": "iso-8859-1",
+        "with_header": true,
+        "oci_bucket": "myorg-datalake-input-prod",
+        "prefix_path": "manual-loads/emkt_suscriptor_base",
+        "campos":[
+            {"name": "EMAIL", "type": "string"},
+            {"name": "CLASS", "type": "string"},
+            {"name": "SEGMENTATION", "type": "string"},
+            {"name": "SOURCE", "type": "string"},
+            {"name": "SUBSCRIPTION_DATE", "type": "string"},
+            {"name": "COUNTRY", "type": "string"},
+            {"name": "LAST_UPDATE", "type": "string"}
+        ]
+    }
+]
